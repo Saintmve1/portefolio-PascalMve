@@ -13,7 +13,7 @@
   <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
-      <div class="logo" id="logo">Pascal Keyne</div>
+      <div class="logo" id="logo">MVE Pascal Keyne</div>
       <ul class="nav-links">
         <li><a href="#about">À propos</a></li>
         <li><a href="#formation">Formation</a></li>
@@ -26,26 +26,42 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>MVE Pascal Keyne</h1>
-      <p class="hero-subtitle">Étudiant BTS SIO SLAM • Développeur Web & Mobile • Passionné par le code propre et les expériences utilisateur fluides</p>
-    </div>
-  </section>
+  <div class="hero-bg">
+    <img 
+      src="img/Coding GIF - Coding - Discover & Share GIFs.gif" 
+      alt="fond animé coding" 
+      class="bg-image"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">MVE Pascal</h1>
+    <p class="hero-subtitle">
+      Étudiant BTS SIO SLAM • Développeur Web & Mobile<br>
+      Passionné par le code propre et les expériences utilisateur fluides
+    </p>
+    <!-- Optionnel : petit call-to-action -->
+    <a href="#about" class="hero-cta">Découvrir mon parcours →</a>
+  </div>
+</section>
 
   <!-- À propos -->
   <section id="about">
     <div class="about-content">
-      <img src="img/photo6.png" alt="MVE Pascal Keyne" class="profile-photo">
+      <img src="img/WhatsApp Image 2026-02-12 at 12.46.05.jpeg" alt="MVE Pascal Keyne" class="profile-photo">
       <div class="about-text">
-        <h2>Bonjour, je suis Pascal Keyne</h2>
+        <h2>Bonjour, je suis MVE Pascal Keyne</h2>
         <p>
           Actuellement en <strong>BTS SIO option SLAM</strong> à l’Institut National Supérieur des Technologies Avancées,<br>
           je développe des applications web modernes, performantes et esthétiques.
         </p>
         <p>
-          Passionné depuis toujours par l’informatique, J'ai opté pour un BTS Service Insformoatique aux Organisations.<br>
+          Passionné depuis toujours par l’informatique, J'ai opté pour un BTS Service Informatique aux Organisations.<br>
         </p>
-        <a href="CV1.pdf" target="_blank" class="btn-cv">
+        <a href="img/MON CV .pdf" target="_blank" class="btn-cv">
           Télécharger mon CV
         </a>
       </div>
@@ -57,7 +73,7 @@
     <h2 class="section-title">Ma formation</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-date">2023 – 2025</div>
+        <div class="timeline-date">2023 – 2026</div>
         <div class="timeline-content">
           <h3>BTS SIO option SLAM</h3>
           <h4>Institut National Supérieur des Technologies Avancées</h4>
@@ -127,6 +143,18 @@
           </div>
         </div>
       </div>
+       
+     <div class="skill-card">
+      <div class="skill-header">
+        <i class="fab fa-github"></i>
+        <h3>Git / GitHub</h3>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-percent="85">
+          <span class="skill-percent">50%</span>
+        </div>
+      </div>
+    </div>
 
     </div>
   </section>
@@ -143,8 +171,7 @@
       <!-- Page 1 – Couverture -->
       <div class="book-page">
         <div class="inner">
-          <h1>Le Cloud Computing</h1>
-          <h2>Veille technologique 2025</h2>
+          <h2>Le Cloud Computing</h2>
           <p class="author">MVE Pascal Keyne</p>
           <img src="img/cloud-computing.png" alt="Cloud" class="book-cover-img">
           <p class="date">Novembre 2025</p>
@@ -154,15 +181,9 @@
       <!-- Page 2 – Définition -->
       <div class="book-page">
         <div class="inner">
-          <h3>Qu’est-ce que le Cloud Computing ?</h3>
-          <p>Le Cloud Computing est la fourniture à la demande de ressources informatiques via Internet.</p>
-          <ul>
-            <li><strong>IaaS</strong> → Infrastructure (serveurs, stockage)</li>
-            <li><strong>PaaS</strong> → Plateforme de développement</li>
-            <li><strong>SaaS</strong> → Logiciels en ligne</li>
           </ul>
-          <img src="img/Types_cloud-06.jpg" alt="Modèles Cloud" class="book-img">
-          <p class="caption">Modèles IaaS / PaaS / SaaS – NIST</p>
+          <img src="img/CLOUD CAMPUTING.png" alt="Modèles Cloud" class="book-img">
+          <p class="caption">
           <div class="page-number">1</div>
         </div>
       </div>
@@ -170,76 +191,23 @@
       <!-- Page 3 – Avantages -->
       <div class="book-page">
         <div class="inner">
-          <h3>Avantages du Cloud</h3>
-          <ul>
-            <li>Évolutivité instantanée</li>
-            <li>Réduction des coûts (CapEx → OpEx)</li>
-            <li>Accès mondial 24/7</li>
-            <li>Mises à jour automatiques</li>
-            <li>Collaboration facilitée</li>
-          </ul>
-          <img src="img/benefits-revised.webp" alt="Économies" class="book-img">
-          <p class="caption">Économies moyennes : 30 à 50 %</p>
+          <img src="img/CLOUD CAMPUTING (1).png" alt="Économies" class="book-img">
           <div class="page-number">2</div>
         </div>
       </div>
 
-      <!-- Page 4 – Inconvénients -->
+      <!-- Page 4 – Avantages -->
       <div class="book-page">
         <div class="inner">
-          <h3>Inconvénients & Risques</h3>
-          <ul>
-            <li>Vendor lock-in</li>
-            <li>Factures imprévues</li>
-            <li>Sécurité & RGPD</li>
-            <li>Pannes globales</li>
-            <li>Souveraineté des données</li>
-          </ul>
-          <img src="img/Outage.jpg" alt="Panne" class="book-img">
-          <p class="caption">Exemple : panne AWS décembre 2021</p>
+          <img src="img/CLOUD CAMPUTING (2).png" alt="Économies" class="book-img">
           <div class="page-number">3</div>
         </div>
       </div>
 
-      <!-- Page 5 – Conclusion -->
-      <div class="book-page">
-        <div class="inner">
-          <h3>Conclusion</h3>
-          <p>En 2025, le Cloud est devenu l’infrastructure par défaut.</p>
-          <p>Compétences à maîtriser en BTS SIO SLAM :</p>
-          <ul>
-            <li>Docker & Kubernetes</li>
-            <li>Terraform / IaC</li>
-            <li>AWS ou Azure</li>
-            <li>Sécurité Cloud</li>
-          </ul>
-          <div class="page-number">4</div>
-        </div>
-      </div>
+      
 
-      <!-- Page 6 – Veille -->
-      <div class="book-page">
-        <div class="inner">
-          <h3>Où je réalise ma veille</h3>
-          <div class="sources">
-            <div class="source">
-              <p><strong>Sur X (Twitter)</strong></p>
-              <p>@googlecloud_fr<br>@AWSFrance<br>@AzureFrance<br>@OVHcloud_FR</p>
-            </div>
-            <div class="source">
-              <p><strong>Sur Feedly</strong></p>
-              <p>Compte : <strong>Pascal Mve</strong><br>+40 flux Cloud & DevOps</p>
-            </div>
-          </div>
-          <p class="thanks">Merci pour votre lecture !</p>
-          <div class="page-number">5</div>
-        </div>
-      </div>
-
-    </div>
-
-    <button id="prevPage" class="book-btn">Précédent</button>
-    <button id="nextPage" class="book-btn">Suivant</button>
+    <button id="prevPage" class="book-btn"></button>
+    <button id="nextPage" class="book-btn"></button>
     <div class="page-indicator">Page <span id="currentPage">1</span> / 6</div>
   </div>
 </section>
@@ -253,13 +221,17 @@
     </div>
  
 
-  <!-- Projets (style Karim) -->
   <section id="projects">
-    <h2 class="section-title">Mes projets</h2>
-    <div class="projects-grid">
+  <h2 class="section-title">Mes projets</h2>
+
+  <div class="projects-carousel-wrapper">
+    <div class="projects-carousel">
+      
+      <!-- Projet 1 -->
       <article class="project-card-modern">
         <div class="project-image">
-          <img src="img/623DB011-07F1-4355-8BEA-77E9A0F57A82.png" alt="Astre" onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Astre'" />
+          <img src="img/623DB011-07F1-4355-8BEA-77E9A0F57A82.png" alt="Astre" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Astre'" />
           <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
         </div>
         <div class="project-content">
@@ -268,13 +240,37 @@
           <div class="project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
           </div>
-          <a href="https://github.com/Saintmve1/astre" target="_blank" class="btn-project">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <a href="Manuel Utilisation Astre.pdf" target="_blank" class="btn-project">
+            Voir <i class="fas fa-arrow-right"></i>
+          </a>
+          
         </div>
       </article>
 
+      <!-- Projet 2 -->
       <article class="project-card-modern">
         <div class="project-image">
-          <img src="img/8C0647D4-0A4A-4BDB-ABD3-E900F24AE018.jpg" alt="Locks Karebbean" onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Locks+Karebbean'" />
+          <img src="img/MEDIATHEQUE-removebg-preview.png" alt="Mediathèque" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Mediathèque'" />
+          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-content">
+          <h3>Mediathèque – Gestion d'une médiathèque</h3>
+          <p>Gestion de catalogue, d'adhérents et prêts</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>VENDOR</span>
+          </div>
+          <a href="MLD Media.pdf" class="btn-project">
+            Voir <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Projet 3 -->
+      <article class="project-card-modern">
+        <div class="project-image">
+          <img src="img/8C0647D4-0A4A-4BDB-ABD3-E900F24AE018.jpg" alt="Locks Karebbean" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Locks+Karebbean'" />
           <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
         </div>
         <div class="project-content">
@@ -283,29 +279,101 @@
           <div class="project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Stripe</span>
           </div>
-          <a href="http://localhost/StageSalon2025/StageSalon/index.php" class="btn-project">Voir le site <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </article>
-        
-<div class="projects-grid">
-      <article class="project-card-modern">
-        <div class="project-image">
-          <img src="img/1.png" alt="Saint Parfum" onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Astre'" />
-          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
-        </div>
-        <div class="project-content">
-          <h3>SAINT PARFUM – Boutique de parfums en ligne</h3>
-          <p>Site e-commerce complet avec catalogue, panier, filtres et administration.</p>
-          <div class="project-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
-          </div>
-          <a href="http://localhost/saintparfum/index.php" target="_blank" class="btn-project">Voir le site <i class="fas fa-arrow-right"></i></a>
+          <a href="http://localhost/StageSalon2025/StageSalon/index.php" class="btn-project">
+            Voir le site <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </article>
 
-      
+      <!-- Projet 4 (ajoute autant que tu veux ici) -->
+      <article class="project-card-modern">
+        <div class="project-image">
+          <img src="img/1.png" alt="Saint Parfum" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Saint+Parfum'" />
+          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-content">
+          <h3>SAINT PARFUM – Boutique de parfums</h3>
+          <p>Site e-commerce complet avec catalogue, panier, filtres et administration.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Stripe</span>
+          </div>
+          <a href="http://localhost/saintparfum/index.php" target="_blank" class="btn-project">
+            Voir le site <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+
+      <article class="project-card-modern">
+        <div class="project-image">
+          <img src="img/FLEET MANAGER.png" alt="Saint Parfum" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Saint+Parfum'" />
+          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-content">
+          <h3>FLEET MAANGER – Gestion de flotte</h3>
+          <p>Application de gestion de la Flotte de voiture </p>
+          <div class="project-tags">
+            <span>C#</span>
+          </div>
+          <a href="Manuel d'utlisation FleetManager - Copie.pdf" target="_blank" class="btn-project">
+            Voir <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="Fleet Manager.lnk" target="_blank" class="btn-project">
+            Voir le site <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- Projet 5 -->
+      <article class="project-card-modern">
+        <div class="project-image">
+          <img src="img/Capture d'écran 2026-02-18 160706.png" alt="Blog" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Blog'" />
+          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-content">
+          <h3>Mon Blog Personnel</h3>
+          <p>Ajout de billets, commentaires, visualisation avec Smarty.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>Smarty</span><span>Vendor</span>
+          </div>
+          <a href="http://localhost/Blog/index_blog.php" target="_blank" class="btn-project">
+            Voir le site <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card-modern">
+        <div class="project-image">
+          <img src="img/Memory.png" alt="Blog" 
+               onerror="this.src='https://via.placeholder.com/800x500/1a1a1a/00aaff?text=Blog'" />
+          <div class="project-overlay"><i class="fas fa-external-link-alt"></i></div>
+        </div>
+        <div class="project-content">
+          <h3>Mon Jeu - Memory</h3>
+          <p>Jeu de paire.</p>
+          <div class="project-tags">
+            <span>JS</span><span>HTML</span><span>CSS</span>
+          </div>
+          <a href="http://localhost/Jeu/memory.html" target="_blank" class="btn-project">
+            Voir le site <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+
     </div>
-  </section>
+  </div>
+
+  <!-- Indicateur optionnel (points ou numéros) – peut être amélioré plus tard -->
+  <div class="carousel-dots">
+    <!-- Les points seront ajoutés en JS si tu veux, ou reste simple -->
+  </div>
+</section>
+
+  
 
   <!-- Contact & Footer -->
   <section id="contact">
@@ -329,12 +397,12 @@
   </section>
 
   <footer>
-    <p>© 2025 MVE Pascal Keyne – Tous droits réservés</p>
+    <p>© 2026 MVE Pascal Keyne – Tous droits réservés</p>
     <div class="social-media-icons">
       <a href="https://github.com/Saintmve1"><i class="fab fa-github"></i></a>
       <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://fr.linkedin.com/in/pascal-keyne-mve-b82961331"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:mvepascal3@gmail.com" class="contact-link">
-    <i class="fas fa-envelope"></i> mvepascal3@gmail.com
+    <i class="fas fa-envelope"></i> 
 </a>
     </div>
   </footer>

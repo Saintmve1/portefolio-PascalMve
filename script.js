@@ -65,3 +65,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   showPage(0); // Démarrage propre
 });
+tsParticles.load("tsparticles", {
+  fullScreen: { enable: false },
+  particles: {
+    number: { value: 50, density: { enable: true, value_area: 800 } },
+    color: { value: ["#0f9", "#00ccff", "#ffffff"] },
+    shape: { type: "circle" },
+    opacity: { value: 0.5, random: true },
+    size: { value: 3, random: true },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: true,
+      straight: false,
+      outModes: "out"
+    }
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      onHover: { enable: true, mode: "grab" },
+      resize: true
+    },
+    modes: { grab: { distance: 180, links: { opacity: 0.4 } } }
+  },
+  detectRetina: true
+});
