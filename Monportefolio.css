@@ -53,6 +53,22 @@ body::before {
   align-items: center;
 }
 .logo { font-size: 1.9rem; font-weight: 700; color: #fff; transition: color 0.4s; }
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid #00aaff;
+  color: #00aaff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.mobile-menu-toggle.open {
+  background: rgba(0, 170, 255, 0.15);
+}
 .nav-links { display: flex; gap: 3.5rem; list-style: none; }
 .nav-links a {
   color: #aaa;
@@ -357,6 +373,47 @@ section { padding: 140px 3rem; max-width: 1400px; margin: 0 auto; }
   margin: 0 auto;
   padding: 0 1rem;
   overflow: hidden;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 170, 255, 0.45);
+  background: rgba(0, 10, 20, 0.8);
+  color: #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.carousel-nav:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: rgba(0, 170, 255, 0.2);
+}
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1.3rem;
+}
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.carousel-dot.active {
+  background: #00aaff;
+  transform: scale(1.25);
 }
 
 .projects-carousel {
@@ -782,4 +839,74 @@ footer {
     padding: 0.85rem 1.8rem;
     font-size: 0.98rem;
   }
+}
+
+/* Améliorations expansives / responsive générale */
+@media (max-width: 1200px) {
+  .nav-container { padding: 0 2rem; }
+  .hero { padding: 0 1.2rem; }
+  section { padding: 110px 1.75rem; }
+  .about-content { gap: 2.5rem; }
+  .timeline { padding: 3rem 0; }
+  .simple-book { max-width: 100%; }
+  .book-pages { height: 520px; }
+}
+
+@media (max-width: 992px) {
+  .mobile-menu-toggle { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 72px;
+    right: -100%;
+    width: 84%;
+    max-width: 360px;
+    height: calc(100vh - 72px);
+    background: rgba(5, 8, 15, 0.96);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    gap: 0;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    transition: right 0.4s ease;
+    z-index: 1500;
+  }
+  .nav-links.active { right: 0; }
+  .nav-links li { margin: 0.75rem 0; }
+  .nav-links a {
+    color: #fff;
+    font-size: 1.12rem;
+    height: 100%;
+    padding: 0.55rem 0.5rem;
+  }
+  .nav-links a::after { display: none; }
+
+  .about-content { flex-direction: column; align-items: center; }
+  .profile-photo { width: 220px; height: 220px; }
+  .about-text h2 { font-size: 2rem; text-align: center; }
+  .about-text p { font-size: 1rem; }
+
+  .timeline::before, .timeline-line { left: 10px; }
+  .timeline-item, .timeline-item.left, .timeline-item:nth-child(even) {
+    width: 100%;
+    left: 0;
+    text-align: left !important;
+    padding: 1.4rem 1rem 1.4rem 4rem;
+  }
+  .timeline-item::after, .timeline-item.left::after, .timeline-item:nth-child(even)::after {
+    left: 10px !important;
+  }
+
+  .book-pages { height: 500px; }
+  .project-card-modern { flex: 0 0 90%; width: 90%; }
+}
+
+@media (max-width: 640px) {
+  .nav-container { padding: 0 1rem; }
+  .nav-links { width: 100%; max-width: none; }
+  .hero h1 { font-size: 2.7rem; }
+  section { padding: 95px 1rem; }
+  .profile-photo { width: 180px; height: 180px; }
+  .skills-container { grid-template-columns: 1fr; }
+  .certification-content { width: 100%; padding: 2rem; }
+  #contact { padding: 4rem 1.2rem; }
 }
